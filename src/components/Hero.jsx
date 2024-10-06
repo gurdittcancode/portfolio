@@ -42,7 +42,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="text-lg font-semibold mt-6">
-        in my coding journey, i have 3 months of experience as an SDE intern,
+        in my coding journey, i gained 3 months of experience as an SDE intern,
         and i won a category prize in{" "}
         <a
           href="https://devpost.com/software/newsdoor"
