@@ -3,7 +3,7 @@ const className =
 
 export default function Contact() {
   return (
-    <div className="mt-12 w-4/5 max-w-[750px] flex flex-col pb-8">
+    <div className="mt-12 w-10/12 md:w-4/5 max-w-[750px] flex flex-col pb-8">
       <h2 className="text-3xl text-cyan-500 font-bold">contact</h2>
       <div className="mt-3">
         <p className="font-semibold text-lg">

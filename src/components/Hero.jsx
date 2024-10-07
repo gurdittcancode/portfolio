@@ -3,7 +3,7 @@ import { RESUME_URL } from "../constants";
 
 export default function Hero() {
   return (
-    <div className="w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8">
+    <div className="w-10/12 md:w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8">
       <div>
         <div className="flex ">
           <div className="w-full lg:w-1/2 flex flex-col gap-y-3">
@@ -32,12 +32,12 @@ export default function Hero() {
               </a>
             </span>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 hidden lg:block">
             {" "}
             <img
               src="/gurditt.jpeg"
               alt="hero image"
-              className="hidden lg:block w-5/6 mx-auto transition-all duration-300 ease-in-out border-3 border-transparent hover:border-white hover:shadow-lg hover:shadow-white rounded-lg"
+              className=" w-5/6 mx-auto transition-all duration-300 ease-in-out border-3 border-transparent hover:border-white hover:shadow-lg hover:shadow-white rounded-lg"
             />
           </div>
         </div>

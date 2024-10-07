@@ -2,7 +2,7 @@ import { EXPERIENCES } from "../constants";
 
 export default function Experience() {
   return (
-    <div className="mt-12 w-4/5 max-w-[750px] flex flex-col border-b-4 border- border-b-cyan-500 border-dotted pb-8">
+    <div className="mt-12 w-10/12 md:w-4/5 max-w-[750px] flex flex-col border-b-4 border- border-b-cyan-500 border-dotted pb-8">
       <h2 className="text-3xl text-cyan-500 font-bold">experience</h2>
       <div className="flex flex-col w-full mt-7">
         {EXPERIENCES.map((exp, idx) => (
