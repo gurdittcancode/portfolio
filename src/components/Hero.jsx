@@ -1,11 +1,31 @@
 import { CircleArrowRight, Sparkles } from "lucide-react";
 import { RESUME_URL } from "../constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Hero() {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#hero",
+      {
+        y: -10,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+      },
+    );
+  }, []);
+
   return (
-    <div className="w-10/12 md:w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8">
+    <div
+      id="hero"
+      className="w-10/12 md:w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8"
+    >
       <div>
-        <div className="flex ">
+        <div className="flex">
           <div className="w-full lg:w-1/2 flex flex-col gap-y-3">
             <div className="border-b-4 border- border-b-cyan-500 border-dotted py-6 flex flex-col">
               <h1 className="text-5xl text-white font-bold">
