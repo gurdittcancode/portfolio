@@ -1,3 +1,15 @@
+import {
+  docker,
+  git,
+  javascript,
+  mongodb,
+  nextjs,
+  postgres,
+  react,
+  tailwind,
+  typescript,
+} from "./assets";
+
 export const RESUME_URL =
   "https://drive.google.com/file/d/1037Vex82VC2y0vlwWg9EI53D91sn45kl/view?usp=sharing";
 
@@ -34,5 +46,55 @@ export const PROJECTS = [
     tech: ["react.js", "tailwindcss", "docker"],
     description:
       "react weather application built using openweather api. it has attrative styling and semantic symbols. the application is dockerized as well",
+  },
+];
+
+export const EXPERIENCES = [
+  {
+    position: "sde intern",
+    placeOfWork: "hyresnap pvt ltd",
+    tenure: "june 2024 - sept 2024",
+    description:
+      "spearheaded the task of integrating recruiterflow ats with our services. built features with Next.js, Redux Toolkit, RTK Query, and Typescript. worked with bug support team to fix bugs in real-time. created api routes and functions in flask for mongodb databases",
+  },
+];
+
+export const TECHNOLOGIES = [
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React.js",
+    icon: react,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
+  {
+    name: "TailwindCSS",
+    icon: tailwind,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
+    name: "Docker",
+    icon: docker,
   },
 ];

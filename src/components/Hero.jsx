@@ -3,7 +3,7 @@ import { RESUME_URL } from "../constants";
 
 export default function Hero() {
   return (
-    <div className="w-4/5 max-w-[1000px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8">
+    <div className="w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8">
       <div>
         <div className="flex ">
           <div className="w-full lg:w-1/2 flex flex-col gap-y-3">
@@ -12,13 +12,14 @@ export default function Hero() {
                 hi, i&apos;m gurditt{" "}
                 <Sparkles size={40} className="inline-block" />
               </h1>
-              <span className="text-cyan-500 font-bold text-3xl mt-3">
+              <span className="text-cyan-500 font-bold text-2xl mt-3">
                 full stack engineer from delhi, india
               </span>
             </div>
             <span className="text-gray-500 font-semibold text-xl">
-              rearranging 0s and 1s to create beautiful websites and products
-              for the last 1.5 years. here to serve your web development needs
+              rearranging 0s and 1s to create beautiful, minimalist websites and
+              products for the last 1.5 years. here to serve your web
+              development needs
             </span>
             <span className="font-semibold text-xl text-white mt-3">
               actively looking for internships and full-time roles as a
@@ -36,7 +37,7 @@ export default function Hero() {
             <img
               src="/gurditt.jpeg"
               alt="hero image"
-              className="hidden lg:block w-4/6 mx-auto transition-all duration-300 ease-in-out border-3 border-transparent hover:border-white hover:shadow-lg hover:shadow-white rounded-lg"
+              className="hidden lg:block w-5/6 mx-auto transition-all duration-300 ease-in-out border-3 border-transparent hover:border-white hover:shadow-lg hover:shadow-white rounded-lg"
             />
           </div>
         </div>

@@ -3,8 +3,8 @@ import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function Projects() {
   return (
-    <div className="mt-12 w-4/5 max-w-[1000px] flex flex-col">
-      <h2 className="text-4xl text-cyan-500 font-bold">projects</h2>
+    <div className="mt-12 w-4/5 max-w-[750px] flex flex-col border-b-4 border- border-b-cyan-500 border-dotted pb-8">
+      <h2 className="text-3xl text-cyan-500 font-bold">projects</h2>
       <div className="flex flex-wrap gap-7 mt-7">
         {PROJECTS.map((proj, idx) => (
           <div key={idx} className="max-w-[220px]">
