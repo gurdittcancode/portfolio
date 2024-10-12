@@ -8,7 +8,7 @@ export default function Tech() {
       <span className="my-2">(try dragging the balls :))</span>
       <div className="flex flex-row flex-wrap justify-center gap-10">
         {TECHNOLOGIES.map((tech) => (
-          <div className="size-28" key={tech.name}>
+          <div className="h-28 w-28" key={tech.name}>
             <BallCanvas icon={tech.icon} />
           </div>
         ))}

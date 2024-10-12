@@ -2,7 +2,8 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
-import Tech from "./components/Tech";
+import React from "react";
+const LazyTech = React.lazy(() => import("./components/Tech"));
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Hero />
       <Experience />
       <Projects />
-      <Tech />
+      <LazyTech />
       <Contact />
     </div>
   );

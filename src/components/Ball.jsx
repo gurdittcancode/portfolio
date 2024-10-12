@@ -6,7 +6,10 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import { Suspense } from "react";
+import CanvasLoader from "./Loader";
 
+// @ts-ignore
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
@@ -41,8 +44,10 @@ export default function BallCanvas({ icon }) {
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <OrbitControls enableZoom={false} />
-      <Ball imgUrl={icon} />
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls enableZoom={false} />
+        <Ball imgUrl={icon} />
+      </Suspense>
       <Preload all />
     </Canvas>
   );

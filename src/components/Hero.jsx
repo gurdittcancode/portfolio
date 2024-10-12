@@ -1,28 +1,18 @@
 import { CircleArrowRight, Sparkles } from "lucide-react";
 import { RESUME_URL } from "../constants";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Hero() {
-  useGSAP(() => {
-    gsap.fromTo(
-      "#hero",
-      {
-        y: -10,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-      },
-    );
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
   }, []);
 
   return (
     <div
-      id="hero"
-      className="w-10/12 md:w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8"
+      className={`w-10/12 md:w-4/5 max-w-[750px] flex-col items-center border-b-4 border- border-b-cyan-500 border-dotted pb-8 transition-all duration-700   ${visible ? "-translate-y-0 opacity-100" : "-translate-y-4 opacity-0"}`}
     >
       <div>
         <div className="flex">
