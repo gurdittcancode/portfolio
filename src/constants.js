@@ -20,7 +20,7 @@ export const PROJECTS = [
     github: "https://github.com/gurdittcancode/bleepkart-ecommerce",
     tech: ["next.js", "postgres", "shadcn", "typescript"],
     description:
-      "ecommerce website with support for anonymous carts with an attractive ui. supports  google oauth and merging anonymous cart with account cart (in progress)",
+      "ecommerce website with support for anonymous carts with an attractive ui. supports  google oauth and merging anonymous cart with account cart",
   },
   {
     name: "blog app",
