@@ -7,15 +7,17 @@ import postgres from "./postgresql.png";
 import react from "./reactjs.png";
 import tailwind from "./tailwind.png";
 import typescript from "./typescript.png";
+import drizzle from "./drizzle.png";
 
 export {
-  docker,
-  git,
-  javascript,
-  mongodb,
-  nextjs,
-  postgres,
-  react,
-  tailwind,
-  typescript,
+    docker,
+    git,
+    javascript,
+    mongodb,
+    nextjs,
+    postgres,
+    react,
+    tailwind,
+    typescript,
+    drizzle
 };
